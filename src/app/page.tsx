@@ -20,38 +20,17 @@ const FEATURES = [
 export default function HomePage() {
   return (
     <main className="relative flex min-h-dvh flex-col items-center justify-center overflow-hidden px-5 py-16">
-      {/* ── Multi-layer ambient background ───────────────────── */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
-        {/* Top crown glow */}
-        <div
-          className="absolute -top-40 left-1/2 h-[680px] w-[680px] -translate-x-1/2 rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle, oklch(0.65 0.08 10 / 0.32) 0%, transparent 65%)",
-          }}
-        />
-        {/* Bottom-right warm gold accent */}
+      {/* ── Ambient background ────────────────────────────────── */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10"
+      >
+        {/* Bottom-right green accent */}
         <div
           className="absolute -bottom-32 -right-32 h-[460px] w-[460px] rounded-full"
           style={{
             background:
               "radial-gradient(circle, oklch(0.80 0.07 145 / 0.18) 0%, transparent 65%)",
-          }}
-        />
-        {/* Bottom-left rose accent */}
-        <div
-          className="absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle, oklch(0.72 0.07 10 / 0.16) 0%, transparent 65%)",
-          }}
-        />
-        {/* Subtle center shimmer strip */}
-        <div
-          className="absolute left-1/2 top-1/2 h-px w-[380px] -translate-x-1/2 -translate-y-1/2"
-          style={{
-            background:
-              "linear-gradient(90deg, transparent, oklch(0.30 0.14 10 / 0.18), transparent)",
           }}
         />
       </div>
@@ -64,7 +43,7 @@ export default function HomePage() {
         <Image
           src="/logo.png"
           alt="Gifty"
-          width={110}
+          width={160}
           height={32}
           style={{ mixBlendMode: "multiply" }}
           priority
@@ -75,9 +54,7 @@ export default function HomePage() {
       <SavedBadge />
 
       {/* ── Main card ─────────────────────────────────────────── */}
-      <div
-        className="relative flex w-full max-w-sm flex-col items-center gap-10 text-center"
-      >
+      <div className="relative flex w-full max-w-sm flex-col items-center gap-10 text-center">
         {/* Animated gift logo */}
         <div className="animate-fade-up" style={{ animationDelay: "60ms" }}>
           <AnimatedGiftBox size={148} />
@@ -95,9 +72,7 @@ export default function HomePage() {
               textWrap: "balance",
             }}
           >
-            Mükemmel{" "}
-            <em style={{ fontStyle: "italic" }}>Hediyeyi</em>{" "}
-            Bul
+            Mükemmel <em style={{ fontStyle: "italic" }}>Hediyeyi</em> Bul
           </h1>
           <p
             className="text-base leading-relaxed max-w-[28ch] mx-auto"
@@ -137,7 +112,9 @@ export default function HomePage() {
                   "linear-gradient(90deg, transparent, oklch(1 0 0 / 0.15), transparent)",
               }}
             />
-            <span className="relative flex items-center justify-center gap-2">Hediye Bul <ArrowRight size={15} /></span>
+            <span className="relative flex items-center justify-center gap-2">
+              Hediye Bul <ArrowRight size={15} />
+            </span>
           </Link>
 
           {/* Feature pills */}
@@ -158,17 +135,17 @@ export default function HomePage() {
             ))}
           </div>
 
-          <p
-            className="text-xs"
-            style={{ color: "oklch(0.55 0.03 40)" }}
-          >
+          <p className="text-xs" style={{ color: "oklch(0.55 0.03 40)" }}>
             Hesap gerekmez · Verileriniz saklanmaz
           </p>
         </div>
       </div>
 
       {/* ── Decorative floating dots ──────────────────────────── */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+      >
         <div
           className="absolute animate-float"
           style={{
