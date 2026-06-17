@@ -88,7 +88,7 @@ export default function HomePage() {
           <h1
             className="font-display text-[2.6rem] font-bold leading-[1.1] tracking-[-0.02em]"
             style={{
-              color: "oklch(0.28 0.16 10)",
+              color: "oklch(0.24 0.17 10)",
               textWrap: "balance",
             }}
           >
@@ -119,10 +119,10 @@ export default function HomePage() {
             className="group relative block w-full overflow-hidden rounded-2xl px-6 py-4 text-center text-base font-semibold transition-all duration-300 active:scale-[0.97]"
             style={{
               background:
-                "linear-gradient(135deg, oklch(0.42 0.17 10), oklch(0.28 0.16 10))",
+                "linear-gradient(160deg, oklch(0.30 0.17 10), oklch(0.24 0.17 10))",
               color: "oklch(0.97 0.01 80)",
               boxShadow:
-                "0 4px 28px oklch(0.30 0.16 10 / 0.38), inset 0 1px 0 oklch(1 0 0 / 0.18)",
+                "0 4px 32px oklch(0.24 0.17 10 / 0.45), inset 0 1px 0 oklch(1 0 0 / 0.12)",
             }}
           >
             {/* Shimmer sweep on hover */}
