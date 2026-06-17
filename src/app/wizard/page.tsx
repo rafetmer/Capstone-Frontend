@@ -306,8 +306,8 @@ export default function WizardPage() {
       <div
         className="sticky top-0 z-10 backdrop-blur-xl"
         style={{
-          background: "oklch(0.98 0.005 95 / 0.92)",
-          borderBottom: "1px solid oklch(0 0 0 / 8%)",
+          background: "oklch(0.90 0.030 80 / 0.95)",
+          borderBottom: "1px solid oklch(0 0 0 / 12%)",
         }}
       >
         <div className="mx-auto max-w-2xl px-4 pt-4 pb-3">

@@ -357,8 +357,8 @@ export default function ResultsPage() {
       <div
         className="sticky top-0 z-10 backdrop-blur-xl"
         style={{
-          background: "oklch(0.96 0.025 80 / 0.92)",
-          borderBottom: "1px solid oklch(0 0 0 / 8%)",
+          background: "oklch(0.90 0.030 80 / 0.95)",
+          borderBottom: "1px solid oklch(0 0 0 / 12%)",
         }}
       >
         <div className="mx-auto flex max-w-5xl items-start justify-between gap-4 px-4 py-4">
