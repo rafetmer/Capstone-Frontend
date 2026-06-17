@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { AnimatedGiftBox } from "@/components/design/AnimatedGiftBox";
 import { SavedBadge } from "@/components/design/SavedBadge";
@@ -60,12 +61,14 @@ export default function HomePage() {
         className="absolute top-6 left-1/2 -translate-x-1/2 animate-fade-in"
         style={{ animationDelay: "0ms" }}
       >
-        <span
-          className="font-display text-sm font-semibold tracking-widest uppercase"
-          style={{ color: "oklch(0.30 0.14 10 / 0.85)", letterSpacing: "0.22em" }}
-        >
-          Gifty
-        </span>
+        <Image
+          src="/logo.png"
+          alt="Gifty"
+          width={110}
+          height={32}
+          style={{ mixBlendMode: "multiply" }}
+          priority
+        />
       </div>
 
       {/* Saved gifts badge (top right — shows when gifts are saved) */}
