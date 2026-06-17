@@ -26,7 +26,7 @@ export default function HomePage() {
           className="absolute -top-40 left-1/2 h-[680px] w-[680px] -translate-x-1/2 rounded-full"
           style={{
             background:
-              "radial-gradient(circle, oklch(0.75 0.06 10 / 0.25) 0%, transparent 65%)",
+              "radial-gradient(circle, oklch(0.65 0.08 10 / 0.32) 0%, transparent 65%)",
           }}
         />
         {/* Bottom-right warm gold accent */}
@@ -42,7 +42,7 @@ export default function HomePage() {
           className="absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full"
           style={{
             background:
-              "radial-gradient(circle, oklch(0.80 0.06 10 / 0.12) 0%, transparent 65%)",
+              "radial-gradient(circle, oklch(0.72 0.07 10 / 0.16) 0%, transparent 65%)",
           }}
         />
         {/* Subtle center shimmer strip */}
@@ -50,7 +50,7 @@ export default function HomePage() {
           className="absolute left-1/2 top-1/2 h-px w-[380px] -translate-x-1/2 -translate-y-1/2"
           style={{
             background:
-              "linear-gradient(90deg, transparent, oklch(0.38 0.14 10 / 0.10), transparent)",
+              "linear-gradient(90deg, transparent, oklch(0.30 0.14 10 / 0.18), transparent)",
           }}
         />
       </div>
@@ -62,7 +62,7 @@ export default function HomePage() {
       >
         <span
           className="font-display text-sm font-semibold tracking-widest uppercase"
-          style={{ color: "oklch(0.38 0.14 10 / 0.65)", letterSpacing: "0.22em" }}
+          style={{ color: "oklch(0.30 0.14 10 / 0.85)", letterSpacing: "0.22em" }}
         >
           Gifty
         </span>
@@ -88,7 +88,7 @@ export default function HomePage() {
           <h1
             className="font-display text-[2.6rem] font-bold leading-[1.1] tracking-[-0.02em]"
             style={{
-              color: "oklch(0.38 0.14 10)",
+              color: "oklch(0.28 0.16 10)",
               textWrap: "balance",
             }}
           >
@@ -119,10 +119,10 @@ export default function HomePage() {
             className="group relative block w-full overflow-hidden rounded-2xl px-6 py-4 text-center text-base font-semibold transition-all duration-300 active:scale-[0.97]"
             style={{
               background:
-                "linear-gradient(135deg, oklch(0.50 0.16 10), oklch(0.35 0.14 10))",
+                "linear-gradient(135deg, oklch(0.42 0.17 10), oklch(0.28 0.16 10))",
               color: "oklch(0.97 0.01 80)",
               boxShadow:
-                "0 4px 24px oklch(0.38 0.14 10 / 0.25), inset 0 1px 0 oklch(1 0 0 / 0.15)",
+                "0 4px 28px oklch(0.30 0.16 10 / 0.38), inset 0 1px 0 oklch(1 0 0 / 0.18)",
             }}
           >
             {/* Shimmer sweep on hover */}
@@ -174,7 +174,7 @@ export default function HomePage() {
             width: 5,
             height: 5,
             borderRadius: "50%",
-            background: "oklch(0.38 0.14 10 / 0.35)",
+            background: "oklch(0.30 0.16 10 / 0.50)",
             animationDelay: "0s",
             animationDuration: "4s",
           }}
@@ -187,7 +187,7 @@ export default function HomePage() {
             width: 3.5,
             height: 3.5,
             borderRadius: "50%",
-            background: "oklch(0.38 0.14 10 / 0.25)",
+            background: "oklch(0.30 0.16 10 / 0.38)",
             animationDelay: "0.8s",
             animationDuration: "5s",
           }}
@@ -213,7 +213,7 @@ export default function HomePage() {
             width: 3,
             height: 3,
             borderRadius: "50%",
-            background: "oklch(0.38 0.14 10 / 0.18)",
+            background: "oklch(0.30 0.16 10 / 0.28)",
             animationDelay: "2s",
             animationDuration: "6s",
           }}
