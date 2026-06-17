@@ -2,8 +2,7 @@ import { NextRequest } from "next/server";
 
 // ─── ✏️  PUT YOUR KEY HERE ────────────────────────────────────────────────────
 // Get one at https://openrouter.ai — this never leaves the server.
-const OPENROUTER_API_KEY =
-  "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";
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || "";
 
 // Cheapest model that speaks coherent Turkish and gives grounded answers.
 // Swap to "google/gemini-2.5-flash" for more reasoning headroom.
